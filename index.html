@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSMENT</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
+    <script>
+
+        function resizeIframe(obj) {
+
+          obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+
+        }
+
+      </script>
+</head>
+<body>
+    <div class="main">
+        <div id="header">
+            <ul id="nav">
+                <li><a href="home.html" target="main">Trang chủ</a></li>
+                <li><a href="gioithieu.html" target="main">Giới thiệu</a></li>
+                <li><a href="danhsach.html" target="main">Danh sách</a></li>
+                <li><a href="lienhe.html" target="main">Liện hệ</a></li>
+                <li>
+                    <a href="">
+                        MORE
+                        <i class="nav-arrow-down ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                       <li><a href="signin.html" target="main">Đăng nhập</a></li>
+                       <li><a href="Signup.html" target="main">Đăng kí</a></li>
+                       <li><a href="">Báo lỗi</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!--Ô TÌM KIẾM-->
+            <div class="search-btn">
+                <i class="search-icon ti-search"></i>
+            </div>
+        </div>
+        <div class="content">
+            <iframe src="home.html"  name="main" scrolling="no" width="100%" onload="resizeIframe(this)"  ></iframe>
+        </div>
+        <div id="footer">
+            <div class="socials">
+               <a href=""><i class="ti-facebook"></i></a>
+               <a href=""><i class="ti-instagram"></i></a>
+               <a href=""><i class="ti-youtube"></i></a>
+               <a href=""><i class="ti-pinterest"></i></a>
+               <a href=""><i class="ti-twitter"></i></a>
+               <a href=""><i class="ti-linkedin"></i></a>    
+            </div>
+            <p class="copyright"> Powered by Đức Khải</p>
+           <div class="like-share">
+                <div id="fb-root"></div>
+                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v13.0&appId=319027146855630&autoLogAppEvents=1" nonce="7KxyOPgW"></script>
+                <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="standard" data-action="like" data-size="small" data-share="true"></div>
+           </div>
+           <div class="coment">
+                <div id="fb-root"></div>
+                <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v13.0&appId=319027146855630&autoLogAppEvents=1" nonce="pQAuYSy0"></script>
+                <div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="" data-numposts="5"></div>
+           </div>
+        </div>
+        <!--MAP-->
+
+        <center>
+            <div class="map-section">
+                <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1W2U5v8sYesDADn1UA1LDkkRcpO6uefz4&ehbc=2E312F" width="80%" height="500"></iframe>
+                <!--<img src="assets/img/Anh-co-so-vat-chat-Pho-thong-Cao-dang-FPT-TP-HCM-4.jpg" alt="fpoly">-->
+            </div>
+        </center>
+    </div>
+</body>
+</html>
